@@ -1,0 +1,254 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Jun 16 14:18:57 2023
+# Process ID: 5728
+# Current directory: C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.runs/synth_1
+# Command line: vivado.exe -log test_Risc_16_bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_Risc_16_bit.tcl
+# Log file: C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.runs/synth_1/test_Risc_16_bit.vds
+# Journal file: C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.runs/synth_1\vivado.jou
+# Running On: KR, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 8317 MB
+#-----------------------------------------------------------
+source test_Risc_16_bit.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 429.863 ; gain = 163.215
+Command: synth_design -top test_Risc_16_bit -part xc7z010iclg225-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4808
+INFO: [Synth 8-11241] undeclared symbol 'bne_control', assumed default net type 'wire' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_path.v:73]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 868.879 ; gain = 414.180
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test_Risc_16_bit' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/tb.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/tb.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Risc_16_bit' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/16_bit_Processor.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Datapath_Unit' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_path.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:6]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file './test/test.prog'; please make sure the file is added to project and has read permission, ignoring [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GPRs' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Register.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'GPRs' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Register.v:6]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/ALU_Control_Unit.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/ALU_Control_Unit.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/ALU.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_Memory.v:6]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file './test/test.data'; please make sure the file is added to project and has read permission, ignoring [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_Memory.v:24]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_Memory.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_Memory.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath_Unit' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Data_path.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Control_Unit.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Control_Unit.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Risc_16_bit' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/16_bit_Processor.v:6]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/tb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'test_Risc_16_bit' (0#1) [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/tb.v:7]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-3848] Net memory in module/entity Instruction_Memory does not have driver. [C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.srcs/sources_1/new/Instruction_Mem.v:11]
+WARNING: [Synth 8-7129] Port mem_access_addr[15] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[14] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[13] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[12] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[11] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[10] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[9] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[8] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[7] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[6] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[5] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[4] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_access_addr[3] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[15] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[14] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[13] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[12] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[11] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[10] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[9] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[8] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[7] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[6] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[5] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[0] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 959.973 ; gain = 505.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 959.973 ; gain = 505.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 959.973 ; gain = 505.273
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 959.973 ; gain = 505.273
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 4     
+	   3 Input   16 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1155.020 ; gain = 700.320
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1155.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1256.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 77a1655d
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 45 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1256.703 ; gain = 826.840
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/karth/RISC_MicroProcessor/RISC_MicroProcessor.runs/synth_1/test_Risc_16_bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_Risc_16_bit_utilization_synth.rpt -pb test_Risc_16_bit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 16 14:19:26 2023...
